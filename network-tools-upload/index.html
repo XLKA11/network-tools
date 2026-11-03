@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Запрет на индексацию поисковиками -->
+    <meta name="robots" content="noindex, nofollow">
+    <title>Дачные Советы | Сад и Огород</title>
+    <style>
+        :root {
+            --green-dark: #1b4332;
+            --green-light: #2d6a4f;
+            --bg-color: #f4f9f4;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--green-dark);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--green-light), var(--green-dark));
+            color: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            color: var(--green-dark);
+            margin-top: 0;
+        }
+        .download-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #e9f5eb;
+            border: 2px dashed var(--green-light);
+            border-radius: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--green-light);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: var(--green-dark);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 12px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>🌱 Дачные Советы</h1>
+            <p>Всё для богатого урожая</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>Секреты идеального огорода</h2>
+            <p>Полезные статьи, расчеты и инструменты для настоящих садоводов.</p>
+        </div>
+
+        <div class="articles">
+            <div class="card">
+                <h3>Как вырастить идеальные помидоры</h3>
+                <p>Правильный полив, освещение и подкормка — залог сладких и крупных томатов. Узнайте секреты опытных дачников.</p>
+            </div>
+            <div class="card">
+                <h3>Защита от вредителей</h3>
+                <p>Экологичные методы борьбы с тлей и колорадским жуком без использования агрессивной химии.</p>
+            </div>
+            <div class="card">
+                <h3>Удобрения и подкормка</h3>
+                <p>Как рассчитать идеальную дозу минеральных и органических удобрений для вашего участка.</p>
+            </div>
+        </div>
+
+        <!-- Скрытая секция скачивания -->
+        <div class="download-section">
+            <h3>Мобильный помощник дачника</h3>
+            <p>Скачайте наше приложение для расчета сроков посадки, отслеживания погоды и ведения дневника урожая.</p>
+            <!-- Ссылка на файл. Убедись, что APK лежит в этой же папке и называется так же! -->
+            <a href="garden_helper.apk" class="btn">Скачать приложение</a>
+            <p style="font-size: 12px; color: #666; margin-top: 10px;">Текущая версия: 2.0</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Дачные Советы. Все права защищены.
+    </footer>
+
+</body>
+</html>
